@@ -83,6 +83,10 @@
 
     .feature-list__item {
         max-width: 270px;
+
+        &:nth-child(n+1) {
+            margin-bottom: 0;
+        }
     }
 
     .feature-list__img {
