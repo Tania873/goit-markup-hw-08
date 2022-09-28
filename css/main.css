@@ -486,19 +486,38 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
   }
-  .socials {
-    margin-top: 5px;
+  .contact-list {
+    text-align: center;
+  }
+  .logo_footer {
+    margin-left: auto;
+    margin-right: auto;
   }
   .socials-title {
     margin-bottom: 20px;
     display: block;
+    text-align: center;
+  }
+  .subscribe-form {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__wrapper {
     display: flex;
+  }
+  .contact-list {
+    text-align: start;
+  }
+  .logo_footer {
+    margin-left: 0;
   }
   .address {
     margin-bottom: 0;
@@ -508,9 +527,11 @@ body {
     margin-bottom: 20px;
     display: block;
     padding-top: 12px;
+    text-align: start;
   }
   .subscribe-form {
     margin-left: 93px;
+    text-align: start;
   }
   .subscribe-form__title {
     display: block;
