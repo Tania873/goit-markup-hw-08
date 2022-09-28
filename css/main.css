@@ -1029,11 +1029,6 @@ body {
   justify-content: center;
 }
 
-@media screen and (max-width: 767px) {
-  .button-list {
-    justify-content: start;
-  }
-}
 .button-list__item {
   margin-right: 8px;
 }
@@ -1061,30 +1056,6 @@ body {
 .button_current {
   background-color: var(--button-color);
   color: var(--white-color);
-}
-
-.project-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.project-list__item {
-  width: calc((100% - 60px) / 3);
-  margin-bottom: 30px;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: box-shadow var(--transition-dur-and-func);
-}
-.project-list__item:hover, .project-list__item:focus {
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.12);
-}
-.project-list__item:nth-child(3n) {
-  margin-right: 0;
-}
-.project-list__item:nth-last-child(-n+3) {
-  margin-bottom: 0;
 }
 
 .project-list__description {
@@ -1117,7 +1088,6 @@ body {
   font-size: 18px;
   line-height: 1.6;
   margin: 0;
-  padding: 63px 24px;
   position: absolute;
   display: flex;
 }
@@ -1144,4 +1114,60 @@ body {
   font-size: 16px;
   line-height: 1.87;
   margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .button-list {
+    justify-content: start;
+  }
+  .button-list__item {
+    margin-bottom: 15px;
+  }
+  .project-list__paragraph {
+    padding: 77px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .project-list__item {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: box-shadow var(--transition-dur-and-func);
+  }
+  .project-list__item:hover, .project-list__item:focus {
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.12);
+  }
+  .project-list__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .project-list__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+  .project-list__paragraph {
+    padding-top: 49px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 77px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-list__item {
+    width: calc((100% - 60px) / 3);
+  }
+  .project-list__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .project-list__item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
+  .project-list__paragraph {
+    padding: 63px 24px;
+  }
 }/*# sourceMappingURL=main.css.map */
