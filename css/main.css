@@ -484,6 +484,18 @@ body {
     display: block;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    align-items: center;
+  }
+  .socials {
+    margin-top: 5px;
+  }
+  .socials-title {
+    margin-bottom: 20px;
+    display: block;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__wrapper {
     display: flex;
