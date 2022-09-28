@@ -481,7 +481,7 @@ body {
   }
   .socials-title {
     margin-bottom: 20px;
-    display: inline;
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -490,6 +490,7 @@ body {
   }
   .address {
     margin-bottom: 0;
+    margin-right: 70px;
   }
   .socials-title {
     margin-bottom: 20px;
