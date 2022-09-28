@@ -86,9 +86,12 @@
 }
 
 .project-list__text {
-    padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: 0;
+    padding-top: 30px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .project-list__title {
@@ -123,6 +126,16 @@
         &:not(:last-child) {
             margin-bottom: 30px;
         }
+
+        height: 440px;
+    }
+
+    .project-list__text {
+        display: inline;
+        padding-right: 39px;
+        padding-left: 39px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .project-list__paragraph {
